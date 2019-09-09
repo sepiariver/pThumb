@@ -1,0 +1,145 @@
+{
+    "name": "pThumb"
+    ,"lowCaseName": "phpthumbof"
+    ,"description": "A better phpThumbOf"
+    ,"author": "Jason Grant"
+    ,"version": "2.4.0-dev1"
+    ,"package":{
+        "elements": {
+            "plugins": [{
+                "name": "phpThumbOfCacheManager"
+                ,"description": "Handles cache cleaning when clearing the Site Cache."
+                ,"file": "phpthumbofcachemanager.plugin.php"
+                ,"events": ["OnSiteRefresh"]
+            }]
+            ,"snippets": [{
+                "name": "phpthumbof"
+                ,"description": "Identical to pthumb. Retained for backwards compatibility.<br>Documentation: https://github.com/modxcms/pThumb"
+                ,"file": "phpthumbof.snippet.php"
+                ,"properties": [{
+                    "name": "debug"
+                    ,"description": "prop_pthumb.debug_desc"
+                    ,"type": "combo-boolean"
+                    ,"value": FALSE
+                    ,"lexicon": "phpthumbof:default"
+                },{
+                "name": "pthumb"
+                ,"description": "Identical to phpthumbof. Better for future compatibility.<br>https://github.com/modxcms/pThumb"
+                ,"file": "phpthumbof.snippet.php"
+                ,"properties": [{
+                    "name": "debug"
+                    ,"description": "prop_pthumb.debug_desc"
+                    ,"type": "combo-boolean"
+                    ,"value": FALSE
+                    ,"lexicon": "phpthumbof:default"
+                }]
+            }]
+        }
+        ,"systemSettings":[{
+            "key": "phpthumbof.use_resizer",
+            "value" => FALSE,
+            "xtype": "combo-boolean",
+            "namespace": "phpthumbof",
+            "area": "Images"
+        },
+        {
+            "key": "pthumb.global_defaults",
+        	"value": "",
+        	"xtype": "textfield",
+        	"namespace": "phpthumbof",
+        	"area": "Images"
+        },
+        {
+            "key": "phpthumbof.remote_timeout",
+        	"value" => 5,
+        	"xtype": "textfield",
+        	"namespace": "phpthumbof",
+        	"area": "Other"
+        },
+        {
+            "key": "phpthumbof.postfix_property_hash",
+        	"value" => TRUE,
+        	"xtype": "combo-boolean",
+        	"namespace": "phpthumbof",
+        	"area": "Cache [phpThumbOf]"
+        },
+        {
+            "key": "phpthumbof.cache_path",
+        	"value": "",
+        	"xtype": "textfield",
+        	"namespace": "phpthumbof",
+        	"area": "Cache [phpThumbOf]"
+        },
+        {
+            "key": "phpthumbof.cache_url",
+        	"value": "",
+        	"xtype": "textfield",
+        	"namespace": "phpthumbof",
+        	"area": "Cache [common]"
+        },
+        {
+            "key": "pthumb.clean_level",
+        	"value": "0",
+        	"xtype": "textfield",
+        	"namespace": "phpthumbof",
+        	"area": "Cache [common]"
+        },
+        {
+            "key": "pthumb.use_ptcache",
+        	"value" => FALSE,
+        	"xtype": "combo-boolean",
+        	"namespace": "phpthumbof",
+        	"area": "Cache [pThumb]"
+        },
+        {
+            "key": "pthumb.ptcache_location",
+        	"value": "assets/image-cache",
+        	"xtype": "textfield",
+        	"namespace": "phpthumbof",
+        	"area": "Cache [pThumb]"
+        },
+        {
+            "key": "pthumb.ptcache_images_basedir",
+        	"value": "assets",
+        	"xtype": "textfield",
+        	"namespace": "phpthumbof",
+        	"area": "Cache [pThumb]"
+        },
+        {
+            "key": "phpthumbof.check_mod_time",
+        	"value" => FALSE,
+        	"xtype": "combo-boolean",
+        	"namespace": "phpthumbof",
+        	"area": "Cache [pThumb]"
+        },
+        {
+            "key": "pthumb.s3_output",
+        	"xtype": "textfield",
+        	"namespace": "phpthumbof",
+        	"area": "Amazon S3"
+        },
+        {
+            "key": "pthumb.s3_headers",
+        	"xtype": "textarea",
+        	"namespace": "phpthumbof",
+        	"area": "Amazon S3"
+        },
+        {
+            "key": "pthumb.s3_multi_img",
+        	"value" => false,
+        	"xtype": "combo-boolean",
+        	"namespace": "phpthumbof",
+        	"area": "Amazon S3"
+        },
+        {
+            "key": "pthumb.s3_cache_path",
+        	"xtype": "textfield",
+        	"namespace": "phpthumbof",
+        	"area": "Amazon S3"
+        }]
+    }
+    ,"dependencies": [{
+        "name": "resizer"
+        ,"version": ">=1.0.1"
+    }]
+}
