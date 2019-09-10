@@ -146,4 +146,14 @@
         "name": "resizer"
         ,"version": ">=1.0.1"
     }]
+    ,"build": {
+        "resolver": {
+            "resolversDir": "resolvers",
+            "after": [
+                "packages/resolve.resizer.php",
+                "phpthumbof.resolver.php",
+                "plugin.resolver.php"
+            ]
+        }
+    }
 }
