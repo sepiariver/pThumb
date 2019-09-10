@@ -6,7 +6,10 @@
     ,"version": "2.4.0-dev1"
     ,"package":{
         "elements": {
-            "plugins": [{
+            "categories": [{
+                "name": "pThumb"
+            }]
+            ,"plugins": [{
                 "name": "phpThumbOfCacheManager"
                 ,"description": "Handles cache cleaning when clearing the Site Cache."
                 ,"file": "phpthumbofcachemanager.plugin.php"
