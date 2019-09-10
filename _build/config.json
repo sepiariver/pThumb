@@ -142,10 +142,6 @@
         	"area": "Amazon S3"
         }]
     }
-    ,"dependencies": [{
-        "name": "resizer"
-        ,"version": ">=1.0.1"
-    }]
     ,"build": {
         "resolver": {
             "resolversDir": "resolvers",
