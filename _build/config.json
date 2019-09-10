@@ -20,9 +20,10 @@
                     "name": "debug"
                     ,"description": "prop_pthumb.debug_desc"
                     ,"type": "combo-boolean"
-                    ,"value": FALSE
+                    ,"value": 0
                     ,"lexicon": "phpthumbof:default"
-                },{
+                }]
+            },{
                 "name": "pthumb"
                 ,"description": "Identical to phpthumbof. Better for future compatibility.<br>https://github.com/modxcms/pThumb"
                 ,"file": "phpthumbof.snippet.php"
@@ -30,14 +31,14 @@
                     "name": "debug"
                     ,"description": "prop_pthumb.debug_desc"
                     ,"type": "combo-boolean"
-                    ,"value": FALSE
+                    ,"value": 0
                     ,"lexicon": "phpthumbof:default"
                 }]
             }]
         }
-        ,"systemSettings":[{
+        ,"systemSettings": [{
             "key": "phpthumbof.use_resizer",
-            "value" => FALSE,
+            "value": 0,
             "xtype": "combo-boolean",
             "namespace": "phpthumbof",
             "area": "Images"
@@ -51,14 +52,14 @@
         },
         {
             "key": "phpthumbof.remote_timeout",
-        	"value" => 5,
+        	"value": 5,
         	"xtype": "textfield",
         	"namespace": "phpthumbof",
         	"area": "Other"
         },
         {
             "key": "phpthumbof.postfix_property_hash",
-        	"value" => TRUE,
+        	"value": 1,
         	"xtype": "combo-boolean",
         	"namespace": "phpthumbof",
         	"area": "Cache [phpThumbOf]"
@@ -86,7 +87,7 @@
         },
         {
             "key": "pthumb.use_ptcache",
-        	"value" => FALSE,
+        	"value": 0,
         	"xtype": "combo-boolean",
         	"namespace": "phpthumbof",
         	"area": "Cache [pThumb]"
@@ -107,7 +108,7 @@
         },
         {
             "key": "phpthumbof.check_mod_time",
-        	"value" => FALSE,
+        	"value": 0,
         	"xtype": "combo-boolean",
         	"namespace": "phpthumbof",
         	"area": "Cache [pThumb]"
@@ -126,7 +127,7 @@
         },
         {
             "key": "pthumb.s3_multi_img",
-        	"value" => false,
+        	"value": 0,
         	"xtype": "combo-boolean",
         	"namespace": "phpthumbof",
         	"area": "Amazon S3"
